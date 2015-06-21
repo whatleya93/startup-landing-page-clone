@@ -18,6 +18,15 @@ div {
   margin: 0 auto;
 }
 
+.top-navigatioin > .content > .logo {
+  margin-left: 140px;
+  margin-top: 15px;
+}
+
+.logo {
+  margin-left: 140px;
+  margin-top: 15px;
+}
 
 
 

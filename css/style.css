@@ -8,6 +8,13 @@ div {
 
 
 /* Formatting */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .top-navigation {
   background-color: #fff;
 }
@@ -15,17 +22,17 @@ div {
 .top-navigation > .content {
   width: 970px;
   height: 70px;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 0px 115px;
 }
 
-.top-navigatioin > .content > .logo {
-  margin-left: 140px;
-  margin-top: 15px;
+.top-navigation .links {
+  float: right;
+
 }
 
-.logo {
-  margin-left: 140px;
-  margin-top: 15px;
+.top-navigation .links li {
+  display: inline-block;
 }
 
 

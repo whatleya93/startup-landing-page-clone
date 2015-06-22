@@ -1,20 +1,28 @@
 /* Help with layout*/
 body {
     background-color: LightGray;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 div {
     border: 1px solid Chocolate;
 }
 
-
 /* Formatting */
+
 html {
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.content {
+  margin: 0px auto;
+  padding: 0px 115px;
+}
+
+/* NAVIGATION BAR */
 
 .top-navigation {
   background-color: #fff;
@@ -22,25 +30,17 @@ html {
   width: 100%;
 }
 
+.top-navigation > .content {
+  width: 60.63rem;
+  height: 4.375rem;
+}
+
 .top-navigation .links {
   float: right;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #838994;
   letter-spacing: 0.02em;
   margin-top: 25px;
-}
-
-.top-navigation > .content {
-  width: 970px;
-  height: 70px;
-  margin: 0px auto;
-  padding: 0px 115px;
-}
-
-.top-navigation .links > .active {
-  color: #4c5058;
-  font-weight: 500;
 }
 
 .top-navigation .links li {
@@ -48,19 +48,59 @@ html {
   margin-left: 25px;
 }
 
+.top-navigation .links > .active {
+  color: #4c5058;
+  font-weight: 500;
+}
+
 .top-navigation .links li:hover {
   cursor: pointer;
   color: #333333;
 }
 
+/* INTRODUCTION */
+
 .introduction {
   background-image: url(../images/background.jpeg);
   background-position: center bottom;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 45.938rem;
-  display: block;
+  overflow: auto;
+}
+
+.introduction h1 {
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+  margin-bottom: 0rem; /* I don't know why I need this but I do */
+}
+
+.introduction h3 {
+  margin-top: 1rem;
+  font-size: 1.563rem;
+}
+
+.introduction h1,
+.introduction h3 {
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+.big-button {
+ width: 9.688rem;
+ background-color: #f15a29;
+ border-color: #f15a29;
+ text-shadow: none;
+ border-style: none;
+ border-radius: 4px;
+ padding: 1rem 1.5rem;
+ line-height: 1.33;
+ color: white;
+ text-align: center;
+ display: block;
+ margin: 0 auto;
+ font-size: 1.125rem;
 }
 
 

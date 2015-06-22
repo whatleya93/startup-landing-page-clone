@@ -9,6 +9,7 @@ div {
 
 /* Formatting */
 html {
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -19,6 +20,15 @@ html {
   background-color: #fff;
 }
 
+.top-navigation .links {
+  float: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #838994;
+  letter-spacing: 0.02em;
+  margin-top: 25px;
+}
+
 .top-navigation > .content {
   width: 970px;
   height: 70px;
@@ -26,13 +36,19 @@ html {
   padding: 0px 115px;
 }
 
-.top-navigation .links {
-  float: right;
-
+.top-navigation .links > .active {
+  color: #4c5058;
+  font-weight: 500;
 }
 
 .top-navigation .links li {
   display: inline-block;
+  margin-left: 25px;
+}
+
+.top-navigation .links li:hover {
+  cursor: pointer;
+  color: #333333;
 }
 
 

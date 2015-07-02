@@ -448,7 +448,9 @@ html {
 
 .content {
   margin: 0px auto;
-  padding: 0px 115px;
+  padding: 0 0.938rem;
+  min-width: 37.5rem;
+  width: 46rem;
 }
 
 /* NAVIGATION BAR */
@@ -460,7 +462,7 @@ html {
 }
 
 .top-navigation > .content {
-  width: 60.63rem;
+  width: 60%;
   height: 4.375rem;
 }
 
@@ -474,7 +476,7 @@ html {
 
 .top-navigation .links li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 1.563rem;
 }
 
 .top-navigation .links > .active {
@@ -542,7 +544,9 @@ html {
 /* THREE-ICON SECTION */
 
 .cases {
+  margin-top: 7.875rem;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .cases h2{
@@ -551,5 +555,19 @@ html {
   margin: 1.625rem 0 3.125rem;
 }
 
+.devices {
+  list-style: none;
+  border: 1px solid chocolate;
+}
 
+.cases .devices > li{
+  width: 33.3333333%;
+  float: left;
+}
+
+.cases .devices h3{
+  font-weight: 400;
+  font-size: 1.563rem;
+  margin: 2.5rem, 0px, 1.875rem;
+}
 

@@ -431,12 +431,12 @@ th {
 /* FORMATTING */
 
 body {
-    background-color: LightGray;
+    /*background-color: LightGray;*/
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 div {
-    border: 1px solid Chocolate;
+    /*border: 1px solid Chocolate;*/
 }
 
 html {
@@ -460,6 +460,7 @@ html {
   position: fixed;
   width: 100%;
   z-index: 9999;
+  border-bottom: 1px solid #ddd;
 }
 
 .top-navigation > .content {
@@ -580,4 +581,48 @@ html {
 
 /* FOOTER */
 
+.social {
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
+}
 
+.social hr {
+  margin: 1.313rem 0;
+  border: 0;
+  border-top: 1px solid #eaebec;
+}
+
+.social h5 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social .icons >li{
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+  text-align: center;
+}
+
+.social .icons > li:hover {
+  cursor: pointer;
+}
+
+.social .copy {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
+}
+}
